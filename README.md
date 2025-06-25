@@ -1,5 +1,5 @@
-# Rapid Prototyping do not use for Production
-## Usage
+## Rapid Prototyping do not use for Production
+### Usage
 
 [Helm](https://helm.sh) must be installed to use the charts.  Please refer to
 Helm's [documentation](https://helm.sh/docs) to get started.
