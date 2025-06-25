@@ -1,0 +1,51 @@
+apiVersion: v1
+entries:
+  app-template:
+  - annotations:
+      artifacthub.io/links: |-
+        - name: support
+        url: https://discord.com/invite/tVsPTHWTtr
+      max_scale_version: 24.04.1
+      min_scale_version: 24.04.0
+      truecharts.org/category: custom
+      truecharts.org/max_helm_version: "3.17"
+      truecharts.org/min_helm_version: "3.14"
+      truecharts.org/train: premium
+    apiVersion: v2
+    appVersion: 0.21.1155
+    created: "2025-06-25T18:38:17.097890679Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 25.4.10
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://tccr.io/truecharts
+      version: 15.9.0
+    - condition: redis.enabled
+      name: redis
+      repository: oci://tccr.io/truecharts
+      version: 16.0.5
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: oci://tccr.io/truecharts
+      version: 15.3.17
+    description: Advanced Template to create your own TrueCharts-based Charts
+    digest: e9f0aebc688301890fdf70d94e949dc2b669d967617f57562a68d37ee0bff88d
+    home: https://truecharts.org/charts/premium/app-template
+    icon: https://truecharts.org/img/hotlink-ok/chart-icons/app-template.webp
+    keywords:
+    - custom
+    kubeVersion: '>=1.24.0-0'
+    maintainers:
+    - email: info@truecharts.org
+      name: TrueCharts
+      url: https://truecharts.org
+    name: app-template
+    sources:
+    - https://github.com/truecharts/charts/tree/master/charts/premium/app-template
+    type: application
+    urls:
+    - https://github.com/alfi0812/helm-charts/releases/download/app-template-1.0.0/app-template-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-06-25T18:38:17.097900347Z"
